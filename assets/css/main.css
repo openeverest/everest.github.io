@@ -1,3 +1,39 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+@import "tailwindcss";
+
+/* Base typography and spacing */
+@layer base {
+  body {
+    @apply min-h-screen bg-white text-gray-900;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+  
+  h1 { @apply text-4xl mb-4; }
+  h2 { @apply text-3xl mb-3; }
+  h3 { @apply text-2xl mb-2; }
+  
+  p { @apply mb-4; }
+  
+  a {
+    @apply transition-colors;
+  }
+}
+
+/* Component styles */
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300;
+  }
+  
+  .btn-primary {
+    @apply bg-[#7790DE] text-white hover:bg-[#161641];
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-[#161641] border-2 border-[#161641] hover:bg-[#161641] hover:text-white;
+  }
+}
