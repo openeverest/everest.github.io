@@ -105,10 +105,18 @@ The site is configured for GitHub Pages deployment:
 - **Branch**: main
 - **URL**: https://openeverest.github.io/everest.github.io/
 
-When deploying to GitHub Pages, update `baseURL` in `hugo.toml` to:
-```toml
-baseURL = 'https://openeverest.github.io/everest.github.io/'
-```
+### BaseURL Configuration
+
+The site uses different baseURL settings for development and production:
+
+- **Development (Replit)**: The `npm run dev` command overrides the baseURL to `/` for local development
+- **Production (GitHub Pages)**: The `hugo.toml` file is configured with `baseURL = 'https://openeverest.github.io/everest.github.io/'`
+
+This ensures that:
+- Local development works correctly in Replit's environment
+- Production builds generate correct absolute URLs for GitHub Pages
+
+**Important**: The `baseURL` in `hugo.toml` must match your GitHub Pages URL for production deployment to work correctly.
 
 ## Configuration Files
 

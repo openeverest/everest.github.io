@@ -4,7 +4,7 @@
   "description": "Website for Everest Open Source project",
   "main": "index.js",
   "scripts": {
-    "dev": "hugo server -D --bind 0.0.0.0 --port 5000",
+    "dev": "hugo server -D --bind 0.0.0.0 --port 5000 --baseURL / --appendPort=false",
     "build": "hugo --minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
