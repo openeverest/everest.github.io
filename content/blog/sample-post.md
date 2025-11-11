@@ -1,6 +1,7 @@
+
 ---
-title: "Welcome to Everest Blog"
-date: 2025-11-11T10:00:00
+title: "Welcome to Everest"
+date: 2025-01-15T10:00:00
 draft: false
 image:
     url: 
@@ -8,42 +9,34 @@ image:
 authors:
  - Everest Team
 tags:
- - blog
- - information
  - announcement
-summary: Welcome to the official Everest Open Source project blog. This is where we'll share updates, tutorials, and insights about our projects.
+summary: Welcome to Everest - the open-source platform for automated database provisioning and management. Learn about our mission and how to contribute.
 ---
 
-Welcome to the Everest Open Source project blog!
+Welcome to **Everest** - the first open-source platform for automated database provisioning and management!
 
-This is a sample blog post to demonstrate the structure and capabilities of our Hugo-powered website.
+## Our Mission
 
-## What is Everest?
+At Everest, we believe in the power of open-source collaboration to build exceptional database platforms. Our goal is to foster a vibrant community of contributors who share our vision of creating a world-class database management solution that's:
 
-Everest is an open source project dedicated to innovation and collaboration. Our mission is to create powerful, accessible tools that empower developers and communities worldwide.
+- **Open and Transparent**: Built in the open, by the community, for the community
+- **Vendor-Neutral**: Deploy on any Kubernetes infrastructure without lock-in
+- **Production-Ready**: Enterprise-grade features without enterprise licensing costs
+- **Collaborative**: Your ideas and contributions shape the future of the platform
 
-## Blog Structure
+## Contributing to the Blog
 
-All blog posts are written in Markdown and include frontmatter with the following information:
+We welcome contributions from the community! If you'd like to share your experiences, tutorials, or insights about Everest, here's how:
 
-- **Title**: The post title
-- **Date**: Publication date
-- **Draft**: Whether the post is a draft (true/false)
-- **Image**: Optional featured image with URL and attribution
-- **Authors**: List of post authors
-- **Tags**: Categories and topics
-- **Summary**: Brief description of the post
+1. **Prepare your post** in Markdown format
+2. **Submit a pull request** to [github.com/openeverest/everest.github.io](https://github.com/openeverest/everest.github.io)
+3. **Add your post** to the `content/blog/` folder
+4. **Include frontmatter** with title, date, authors, tags, and summary
 
-## Getting Started
+Our team will review your submission and work with you to get it published.
 
-To create a new blog post, use the following command:
+## Join Us
 
-```bash
-hugo new content/blog/your-post-title.md
-```
+Whether you're a database administrator, developer, or DevOps engineer, there's a place for you in the Everest community. Together, we're building the future of database management.
 
-This will create a new Markdown file with the proper frontmatter template.
-
-## Contributing
-
-We welcome contributions from the community! Check out our [GitHub repository](https://github.com/openeverest) to get started.
+Get started today at [docs.percona.com/everest](https://docs.percona.com/everest/)
