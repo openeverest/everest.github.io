@@ -36,4 +36,57 @@
   .btn-secondary {
     @apply bg-white text-[#161641] border-2 border-[#161641] hover:bg-[#161641] hover:text-white;
   }
+  
+  /* Prose styles for markdown content */
+  .prose {
+    @apply text-gray-700;
+  }
+  
+  .prose h2 {
+    @apply text-3xl font-bold mt-12 mb-6 text-gray-900;
+  }
+  
+  .prose h3 {
+    @apply text-2xl font-bold mt-8 mb-4 text-gray-900;
+  }
+  
+  .prose h4 {
+    @apply text-xl font-bold mt-6 mb-3 text-gray-900;
+  }
+  
+  .prose p {
+    @apply mb-6 leading-relaxed;
+  }
+  
+  .prose ul {
+    @apply list-disc pl-6 mb-6 space-y-2;
+  }
+  
+  .prose ol {
+    @apply list-decimal pl-6 mb-6 space-y-2;
+  }
+  
+  .prose li {
+    @apply leading-relaxed;
+  }
+  
+  .prose strong {
+    @apply font-semibold text-gray-900;
+  }
+  
+  .prose a {
+    @apply text-[#7790DE] hover:text-[#161641] underline;
+  }
+  
+  .prose code {
+    @apply bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono;
+  }
+  
+  .prose pre {
+    @apply bg-gray-100 p-4 rounded-lg overflow-x-auto mb-6;
+  }
+  
+  .prose blockquote {
+    @apply border-l-4 border-gray-300 pl-4 italic my-6;
+  }
 }
