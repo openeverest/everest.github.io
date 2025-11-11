@@ -1,8 +1,51 @@
+
 <footer class="bg-[#161641] text-white mt-24">
     <div class="container mx-auto px-6 py-12">
-        <div class="text-center">
-            <h3 class="text-2xl font-bold mb-4">Everest Open Source</h3>
-            <p class="text-gray-300 mb-6">Building the future together, one commit at a time.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Left side: Two columns of links -->
+            <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <!-- Learn Column -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Learn</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/docs" class="text-gray-300 hover:text-white transition-colors">Documentation</a></li>
+                        <li><a href="/docs/quickstart" class="text-gray-300 hover:text-white transition-colors">Quickstart Guide</a></li>
+                        <li><a href="/docs/tutorials" class="text-gray-300 hover:text-white transition-colors">Tutorials</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Community Column -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Community</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/blog" class="text-gray-300 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="https://github.com/percona/everest/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors">How to Contribute</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Right side: Logo, Social Icons, and GitHub Button -->
+            <div class="flex flex-col items-start md:items-end">
+                <h2 class="text-2xl font-bold mb-4">Everest</h2>
+                
+                <!-- Social Icons -->
+                <div class="flex gap-4 mb-4">
+                    <a href="https://cloud-native.slack.com/archives/C09RRGZL2UX" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zM18.956 8.834a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zM17.688 8.834a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.312zM15.165 18.956a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zM15.165 17.688a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <!-- GitHub Button -->
+                <a href="https://github.com/percona/everest" target="_blank" rel="noopener noreferrer" class="bg-[#7790DE] text-white px-6 py-2 rounded-[10px] hover:bg-opacity-90 transition-all font-medium">
+                    View on GitHub
+                </a>
+            </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="text-center mt-8 pt-8 border-t border-gray-700">
             <p class="text-gray-400 text-sm">© 2025 Everest Open Source. Licensed under the Apache License 2.0.</p>
         </div>
     </div>
