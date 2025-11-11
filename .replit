@@ -1,9 +1,10 @@
-modules = ["python-3.11"]
+modules = ["python-3.11", "nodejs-20"]
 [agent]
 expertMode = true
 
 [nix]
 channel = "stable-25_05"
+packages = ["hugo"]
 
 [workflows]
 runButton = "Project"
@@ -32,10 +33,6 @@ outputType = "webview"
 [[ports]]
 localPort = 5000
 externalPort = 80
-
-[[ports]]
-localPort = 46125
-externalPort = 3000
 
 [deployment]
 deploymentTarget = "autoscale"
