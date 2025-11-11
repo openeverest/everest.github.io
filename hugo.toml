@@ -1,3 +1,16 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://openeverest.github.io/everest.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Everest Open Source'
+theme = ''
+
+[params]
+  description = 'Website for Everest Open Source project'
+  author = 'Everest Team'
+
+[build]
+  writeStats = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
