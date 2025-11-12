@@ -1,7 +1,6 @@
 baseURL = 'https://openeverest.github.io/'
 languageCode = 'en-us'
 title = 'Everest Open Source'
-theme = ''
 
 [params]
   description = 'Website for Everest Open Source project'
