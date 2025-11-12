@@ -11,5 +11,5 @@ Everest is an independent open-source project and does not endorse any specific 
 
 Below is an alphabetical list of companies and individuals offering products or services related to Everest.
 
-- **Percona** - [percona.com](https://percona.com)
-- **Solanica** - [solanica.io](https://solanica.io)
+- [**Percona**](https://percona.com)
+- [**Solanica**](https://solanica.io)
