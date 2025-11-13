@@ -33,7 +33,8 @@
                 <span>
                     {{ range $index, $author := .Params.authors }}
                         {{ if $index }}, {{ end }}
-                        {{ $authorPage := $.Site.GetPage (printf "/authors/%s" ($author | urlize)) }}
+                        {{ $authorSlug := $author | lower | replaceRE "[^a-z0-9]+" "-" }}
+                        {{ $authorPage := $.Site.GetPage (printf "/authors/%s" $authorSlug) }}
                         {{ if $authorPage }}
                             <a href="{{ $authorPage.Permalink }}" class="text-blue-600 hover:underline">{{ $author }}</a>
                         {{ else }}
