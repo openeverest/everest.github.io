@@ -1,9 +1,9 @@
 ---
 title: "The Retirement of Ingress NGINX Controller: What It Means and What's Next"
-date: 2025-11-11T10:00:00Z
+date: 2025-11-19T10:00:00Z
 draft: false
 image:
-    url: blog-ingress.png
+    url: blog-ingress-cover.png
     attribution: 
 authors:
  - spron-in
@@ -57,4 +57,4 @@ Migrating to the Gateway API can be a streamlined process using tools like [ingr
 
 It's a regrettable moment for the community when a beloved project retires due to a lack of maintenance rather than obsolescence. However, the future is promising, with numerous alternatives available, including other ingress controllers and the Gateway API.
 
-At Percona, we [support ingress exposure](https://docs.percona.com/everest/install/install_everest_and_expose_via_ingress.html) for Everest. You can configure specific flags to expose Everest via ingress without any additional complex setups. Stay tuned for upcoming blog posts and documentation articles that will delve deeper into the Gateway API.
+Everest [supports ingress exposure](https://docs.percona.com/everest/install/install_everest_and_expose_via_ingress.html). You can configure specific flags to expose Everest via ingress without any additional complex setups. Stay tuned for upcoming blog posts and documentation articles that will delve deeper into the Gateway API.
