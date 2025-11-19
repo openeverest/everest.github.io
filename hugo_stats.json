@@ -220,6 +220,7 @@
       "avoid-complex-development",
       "before-you-write-a-blog",
       "commercial-support",
+      "conclusion",
       "content-guidelines",
       "contributing-a-blog-post",
       "contributing-to-the-blog",
@@ -251,8 +252,11 @@
       "resource-allocation",
       "storage-management",
       "submission-process",
+      "the-retirement",
       "vertical-scaling",
+      "what-are-the-alternatives",
       "what-is-everest",
+      "what-is-ingress-and-ingress-nginx",
       "why-choose-everest"
     ]
   }
