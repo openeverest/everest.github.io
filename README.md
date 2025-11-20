@@ -1,7 +1,7 @@
 
-# Everest Open Source Website
+# OpenEverest Website
 
-This is the official website for [openeverest.dev](https://openeverest.dev) - the Everest open source project. Everest is the first open-source platform for automated database provisioning and management.
+This is the official website for [openeverest.io](https://openeverest.io) - the Everest open source project. Everest is the first open-source platform for automated database provisioning and management.
 
 ## Technologies
 
@@ -21,7 +21,7 @@ This is the official website for [openeverest.dev](https://openeverest.dev) - th
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/openeverest/everest.github.io.git
+   git clone https://github.com/openeverest/openeverest.github.io.git
    cd everest.github.io
    ```
 
@@ -69,7 +69,7 @@ See the [Blog Contribution Guide](content/blog/README.md) for detailed instructi
 
 ### Reporting Issues
 
-Found a bug or have a suggestion? Please [open an issue](https://github.com/openeverest/everest.github.io/issues) on GitHub.
+Found a bug or have a suggestion? Please [open an issue](https://github.com/openeverest/openeverest.github.io/issues) on GitHub.
 
 ## Project Structure
 
@@ -92,6 +92,6 @@ This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENS
 
 ## Learn More
 
-- [Everest Documentation](https://docs.percona.com/everest/)
-- [Everest GitHub](https://github.com/percona/everest)
+- [OpenEverest Documentation](https://docs.percona.com/everest/)
+- [OpenEverest GitHub](https://github.com/percona/everest)
 - [Hugo Documentation](https://gohugo.io/documentation/)
