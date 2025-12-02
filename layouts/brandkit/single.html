@@ -1,0 +1,263 @@
+
+{{ define "title" }}{{ .Title }} - {{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+<div class="container mx-auto px-4 py-16 max-w-6xl">
+    <header class="mb-12 text-center">
+        <h1 class="text-5xl font-bold mb-4 text-gray-900">{{ .Title }}</h1>
+        <p class="text-xl text-gray-600">{{ .Content }}</p>
+    </header>
+
+    <!-- Icons Section -->
+    <section class="mb-16">
+        <h2 class="text-3xl font-bold mb-8 text-gray-900">Icons</h2>
+        
+        <!-- Light Background -->
+        <div class="mb-12">
+            <h3 class="text-2xl font-semibold mb-6 text-gray-800">For Light Backgrounds</h3>
+            <div class="bg-white rounded-lg shadow-lg p-8 border border-gray-200">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- SVG Icon -->
+                    <div class="text-center">
+                        <div class="bg-gray-50 rounded-lg p-8 mb-4 flex items-center justify-center" style="min-height: 200px;">
+                            <img src="/images/brandkit/icon-full-color-dark.svg" alt="OpenEverest Icon SVG" class="h-32 w-auto">
+                        </div>
+                        <h4 class="font-semibold mb-2">SVG Format</h4>
+                        <p class="text-sm text-gray-600 mb-4">Scalable vector format, perfect for any size</p>
+                        <a href="/images/brandkit/icon-full-color-dark.svg" download class="inline-flex items-center gap-2 bg-[#7790DE] hover:bg-[#161641] text-white font-semibold px-6 py-2 rounded-lg transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                            </svg>
+                            Download SVG
+                        </a>
+                    </div>
+                    
+                    <!-- PNG Icon -->
+                    <div class="text-center">
+                        <div class="bg-gray-50 rounded-lg p-8 mb-4 flex items-center justify-center" style="min-height: 200px;">
+                            <img src="/images/brandkit/icon-full-color-dark-min.png" alt="OpenEverest Icon PNG" class="h-32 w-auto">
+                        </div>
+                        <h4 class="font-semibold mb-2">PNG Format</h4>
+                        <p class="text-sm text-gray-600 mb-4">Raster format, ready to use</p>
+                        <a href="/images/brandkit/icon-full-color-dark-min.png" download class="inline-flex items-center gap-2 bg-[#7790DE] hover:bg-[#161641] text-white font-semibold px-6 py-2 rounded-lg transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                            </svg>
+                            Download PNG
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dark Background -->
+        <div class="mb-12">
+            <h3 class="text-2xl font-semibold mb-6 text-gray-800">For Dark Backgrounds</h3>
+            <div class="bg-gray-900 rounded-lg shadow-lg p-8 border border-gray-700">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- SVG Icon -->
+                    <div class="text-center">
+                        <div class="bg-gray-800 rounded-lg p-8 mb-4 flex items-center justify-center" style="min-height: 200px;">
+                            <img src="/images/brandkit/icon-full-color-white.svg" alt="OpenEverest Icon SVG" class="h-32 w-auto">
+                        </div>
+                        <h4 class="font-semibold mb-2 text-white">SVG Format</h4>
+                        <p class="text-sm text-gray-400 mb-4">Scalable vector format, perfect for any size</p>
+                        <a href="/images/brandkit/icon-full-color-white.svg" download class="inline-flex items-center gap-2 bg-[#7790DE] hover:bg-[#161641] text-white font-semibold px-6 py-2 rounded-lg transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                            </svg>
+                            Download SVG
+                        </a>
+                    </div>
+                    
+                    <!-- PNG Icon -->
+                    <div class="text-center">
+                        <div class="bg-gray-800 rounded-lg p-8 mb-4 flex items-center justify-center" style="min-height: 200px;">
+                            <img src="/images/brandkit/icon-full-color-white-min.png" alt="OpenEverest Icon PNG" class="h-32 w-auto">
+                        </div>
+                        <h4 class="font-semibold mb-2 text-white">PNG Format</h4>
+                        <p class="text-sm text-gray-400 mb-4">Raster format, ready to use</p>
+                        <a href="/images/brandkit/icon-full-color-white-min.png" download class="inline-flex items-center gap-2 bg-[#7790DE] hover:bg-[#161641] text-white font-semibold px-6 py-2 rounded-lg transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                            </svg>
+                            Download PNG
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logos Section -->
+    <section>
+        <h2 class="text-3xl font-bold mb-8 text-gray-900">Logos</h2>
+        
+        <!-- Horizontal Logos -->
+        <div class="mb-12">
+            <h3 class="text-2xl font-semibold mb-6 text-gray-800">Horizontal Layout</h3>
+            
+            <!-- Light Background -->
+            <div class="mb-8">
+                <h4 class="text-xl font-semibold mb-4 text-gray-700">For Light Backgrounds</h4>
+                <div class="bg-white rounded-lg shadow-lg p-8 border border-gray-200">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- SVG Logo -->
+                        <div class="text-center">
+                            <div class="bg-gray-50 rounded-lg p-8 mb-4 flex items-center justify-center" style="min-height: 150px;">
+                                <img src="/images/brandkit/logo-horizontal-full-color-dark.svg" alt="OpenEverest Horizontal Logo SVG" class="h-20 w-auto">
+                            </div>
+                            <h5 class="font-semibold mb-2">SVG Format</h5>
+                            <a href="/images/brandkit/logo-horizontal-full-color-dark.svg" download class="inline-flex items-center gap-2 bg-[#7790DE] hover:bg-[#161641] text-white font-semibold px-6 py-2 rounded-lg transition-colors">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                </svg>
+                                Download SVG
+                            </a>
+                        </div>
+                        
+                        <!-- PNG Logo -->
+                        <div class="text-center">
+                            <div class="bg-gray-50 rounded-lg p-8 mb-4 flex items-center justify-center" style="min-height: 150px;">
+                                <img src="/images/brandkit/logo-horizontal-full-color-dark-min.png" alt="OpenEverest Horizontal Logo PNG" class="h-20 w-auto">
+                            </div>
+                            <h5 class="font-semibold mb-2">PNG Format</h5>
+                            <a href="/images/brandkit/logo-horizontal-full-color-dark-min.png" download class="inline-flex items-center gap-2 bg-[#7790DE] hover:bg-[#161641] text-white font-semibold px-6 py-2 rounded-lg transition-colors">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                </svg>
+                                Download PNG
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dark Background -->
+            <div class="mb-8">
+                <h4 class="text-xl font-semibold mb-4 text-gray-700">For Dark Backgrounds</h4>
+                <div class="bg-gray-900 rounded-lg shadow-lg p-8 border border-gray-700">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- SVG Logo -->
+                        <div class="text-center">
+                            <div class="bg-gray-800 rounded-lg p-8 mb-4 flex items-center justify-center" style="min-height: 150px;">
+                                <img src="/images/brandkit/logo-horizontal-full-color-white.svg" alt="OpenEverest Horizontal Logo SVG" class="h-20 w-auto">
+                            </div>
+                            <h5 class="font-semibold mb-2 text-white">SVG Format</h5>
+                            <a href="/images/brandkit/logo-horizontal-full-color-white.svg" download class="inline-flex items-center gap-2 bg-[#7790DE] hover:bg-[#161641] text-white font-semibold px-6 py-2 rounded-lg transition-colors">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                </svg>
+                                Download SVG
+                            </a>
+                        </div>
+                        
+                        <!-- PNG Logo -->
+                        <div class="text-center">
+                            <div class="bg-gray-800 rounded-lg p-8 mb-4 flex items-center justify-center" style="min-height: 150px;">
+                                <img src="/images/brandkit/logo-horizontal-full-color-white-min.png" alt="OpenEverest Horizontal Logo PNG" class="h-20 w-auto">
+                            </div>
+                            <h5 class="font-semibold mb-2 text-white">PNG Format</h5>
+                            <a href="/images/brandkit/logo-horizontal-full-color-white-min.png" download class="inline-flex items-center gap-2 bg-[#7790DE] hover:bg-[#161641] text-white font-semibold px-6 py-2 rounded-lg transition-colors">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                </svg>
+                                Download PNG
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vertical Logos -->
+        <div class="mb-12">
+            <h3 class="text-2xl font-semibold mb-6 text-gray-800">Vertical Layout</h3>
+            
+            <!-- Light Background -->
+            <div class="mb-8">
+                <h4 class="text-xl font-semibold mb-4 text-gray-700">For Light Backgrounds</h4>
+                <div class="bg-white rounded-lg shadow-lg p-8 border border-gray-200">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- SVG Logo -->
+                        <div class="text-center">
+                            <div class="bg-gray-50 rounded-lg p-8 mb-4 flex items-center justify-center" style="min-height: 200px;">
+                                <img src="/images/brandkit/logo-vertical-full-color-dark.svg" alt="OpenEverest Vertical Logo SVG" class="h-40 w-auto">
+                            </div>
+                            <h5 class="font-semibold mb-2">SVG Format</h5>
+                            <a href="/images/brandkit/logo-vertical-full-color-dark.svg" download class="inline-flex items-center gap-2 bg-[#7790DE] hover:bg-[#161641] text-white font-semibold px-6 py-2 rounded-lg transition-colors">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                </svg>
+                                Download SVG
+                            </a>
+                        </div>
+                        
+                        <!-- PNG Logo -->
+                        <div class="text-center">
+                            <div class="bg-gray-50 rounded-lg p-8 mb-4 flex items-center justify-center" style="min-height: 200px;">
+                                <img src="/images/brandkit/logo-vertical-full-color-dark-min.png" alt="OpenEverest Vertical Logo PNG" class="h-40 w-auto">
+                            </div>
+                            <h5 class="font-semibold mb-2">PNG Format</h5>
+                            <a href="/images/brandkit/logo-vertical-full-color-dark-min.png" download class="inline-flex items-center gap-2 bg-[#7790DE] hover:bg-[#161641] text-white font-semibold px-6 py-2 rounded-lg transition-colors">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                </svg>
+                                Download PNG
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dark Background -->
+            <div class="mb-8">
+                <h4 class="text-xl font-semibold mb-4 text-gray-700">For Dark Backgrounds</h4>
+                <div class="bg-gray-900 rounded-lg shadow-lg p-8 border border-gray-700">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- SVG Logo -->
+                        <div class="text-center">
+                            <div class="bg-gray-800 rounded-lg p-8 mb-4 flex items-center justify-center" style="min-height: 200px;">
+                                <img src="/images/brandkit/logo-vertical-full-color-white.svg" alt="OpenEverest Vertical Logo SVG" class="h-40 w-auto">
+                            </div>
+                            <h5 class="font-semibold mb-2 text-white">SVG Format</h5>
+                            <a href="/images/brandkit/logo-vertical-full-color-white.svg" download class="inline-flex items-center gap-2 bg-[#7790DE] hover:bg-[#161641] text-white font-semibold px-6 py-2 rounded-lg transition-colors">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                </svg>
+                                Download SVG
+                            </a>
+                        </div>
+                        
+                        <!-- PNG Logo -->
+                        <div class="text-center">
+                            <div class="bg-gray-800 rounded-lg p-8 mb-4 flex items-center justify-center" style="min-height: 200px;">
+                                <img src="/images/brandkit/logo-vertical-full-color-white-min.png" alt="OpenEverest Vertical Logo PNG" class="h-40 w-auto">
+                            </div>
+                            <h5 class="font-semibold mb-2 text-white">PNG Format</h5>
+                            <a href="/images/brandkit/logo-vertical-full-color-white-min.png" download class="inline-flex items-center gap-2 bg-[#7790DE] hover:bg-[#161641] text-white font-semibold px-6 py-2 rounded-lg transition-colors">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                </svg>
+                                Download PNG
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usage Guidelines -->
+    <section class="mt-16 bg-blue-50 rounded-lg p-8">
+        <h2 class="text-2xl font-bold mb-4 text-gray-900">Usage Guidelines</h2>
+        <ul class="list-disc list-inside space-y-2 text-gray-700">
+            <li>Please maintain adequate spacing around the logo</li>
+            <li>Do not alter the colors or proportions</li>
+            <li>Use the appropriate version for your background (light/dark)</li>
+            <li>SVG format is recommended for digital and print media</li>
+            <li>PNG format is suitable for quick web implementations</li>
+        </ul>
+    </section>
+</div>
+{{ end }}
