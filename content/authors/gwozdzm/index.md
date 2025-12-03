@@ -1,8 +1,10 @@
 
 ---
-title: "Sergey Pronin"
-github: "spron-in"
-bio: "Sergey is a product leader focusing on delivering robust open-source solutions. After having consistently contributed to the growth of Percona and its product open source culture as a VP of Product, he is now leading the Everest open source database platform. Digital nomad, who enjoys spreading the word about data on Kubernetes. He loves playing tennis and hockey, but his major passions are his family, three kids and a dog. "
+title: "Marcin Gwóźdź"
+github: "gwozdzm"
+bio: "Marcin is a proactive IT advisor who combines business and technical expertise with 10+ years of experience in enterprise software sales across sectors, building technical alliances, and supporting channel sales. I focus on open-source solutions and love sharing knowledge by speaking at conferences.
+Marcin's vision is for open source to become as sustainable as proprietary solutions—in both product development and revenue growth.
+In his free time, he enjoys traveling and outdoor sports (Hiking!). Happy husband and father of a young fellow."
 avatar: "avatar.png"
 ---
 
