@@ -1,6 +1,6 @@
 {{ define "main" }}
-<div class="mx-auto md:w-1/2 px-4">
-    <h1 class="text-xl">{{.Title}}</h1>
+<div class="container mx-auto px-4 py-16 max-w-5xl">
+    <h1 class="text-5xl font-bold mb-4 text-gray-900">{{.Title}}</h1>
     {{ .Content }}
     {{ partial "docs_list.html" . }}
 </div>
