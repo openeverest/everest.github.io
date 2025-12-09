@@ -14,13 +14,13 @@
         <meta name="author" content="Percona LLC">
       
       
-        <link rel="canonical" href="https://docs.percona.com/everest/backups_and_restore/how_to_import_backups.html">
+        <link rel="canonical" href="https://docs.percona.com/everest/backups_and_restore/AboutBackups.html">
       
       
-        <link rel="prev" href="overview.html">
+        <link rel="prev" href="../security/tls_setup.html">
       
       
-        <link rel="next" href="backup_importers_rbac.html">
+        <link rel="next" href="createBackups/backup_storage/CreateStorage.html">
       
       
       <link rel="icon" href="../assets/everest-fav.svg">
@@ -28,7 +28,7 @@
     
     
       
-        <title>How to import backups in Percona Everest - Percona Everest</title>
+        <title>About backups - Percona Everest</title>
       
     
     
@@ -93,7 +93,7 @@
                  
                  
                  <meta property="og:type" content="website" />
-                 <meta property="og:title" content="Percona Everest - How to import backups in Percona Everest" />
+                 <meta property="og:title" content="Percona Everest - About backups" />
                  <meta property="og:image" content="https://docs.percona.com/everest/images/Percona-Everest-social-media-sharings-cover.jpg">
                  <meta property="og:url" content="https://docs.percona.com/everest/">
               
@@ -116,7 +116,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-import-external-database-backups-using-the-percona-everest-ui" class="md-skip">
+        <a href="#about-backups" class="md-skip">
           Skip to content
         </a>
       
@@ -187,7 +187,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              How to import backups in Percona Everest
+              About backups
             
           </span>
         </div>
@@ -442,6 +442,29 @@
   
   <span class="md-ellipsis">
     Release notes index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../release-notes/Percona-Everest-1.8.1-%282025-08-11%29.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Percona-Everest 1.8.1 (2025-08-11)
     
   </span>
   
@@ -1968,10 +1991,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="AboutBackups.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    About backups
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="AboutBackups.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1982,6 +2027,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-its-important-to-create-backups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why it’s important to create backups
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-setups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supported setups
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#start-here" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start here
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2152,20 +2244,18 @@
                 
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_6" >
         
           
           <label class="md-nav__link" for="__nav_11_6" id="__nav_11_6_label" tabindex="0">
@@ -2181,7 +2271,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_11_6">
             <span class="md-nav__icon md-icon"></span>
             Import external database backups
@@ -2195,12 +2285,12 @@
   
   
     <li class="md-nav__item">
-      <a href="overview.html" class="md-nav__link">
+      <a href="dataimporters/overview.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Overview of external database backups
+    Overview
     
   </span>
   
@@ -2215,88 +2305,111 @@
                 
   
   
+  
+  
     
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
       
         
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_6_2" >
+        
           
+          <label class="md-nav__link" for="__nav_11_6_2" id="__nav_11_6_2_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
-    How to import backups in Percona Everest
+    DataImporters
     
   </span>
   
 
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="how_to_import_backups.html" class="md-nav__link md-nav__link--active">
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_11_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            DataImporters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="dataimporters/psmdb_dataimporter.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    How to import backups in Percona Everest
+    Percona MongoDB Operator
     
   </span>
   
 
       </a>
-      
-        
+    </li>
+  
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+              
+            
+              
+                
   
   
   
+  
+    <li class="md-nav__item">
+      <a href="dataimporters/pxc_dataimporter.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Percona MySQL Operator
     
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#import-mongodb-backups" class="md-nav__link">
-    <span class="md-ellipsis">
-      Import MongoDB backups
-    </span>
-  </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#import-mysql-backups" class="md-nav__link">
-    <span class="md-ellipsis">
-      Import MySQL backups
-    </span>
-  </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#import-postgresql-backups" class="md-nav__link">
-    <span class="md-ellipsis">
-      Import PostgreSQL backups
-    </span>
-  </a>
+    <li class="md-nav__item">
+      <a href="dataimporters/pg_dataimporter.html" class="md-nav__link">
+        
   
-</li>
-      
-    </ul>
   
-</nav>
+  <span class="md-ellipsis">
+    Percona PostgreSQL Operator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -2942,27 +3055,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#import-mongodb-backups" class="md-nav__link">
+  <a href="#why-its-important-to-create-backups" class="md-nav__link">
     <span class="md-ellipsis">
-      Import MongoDB backups
+      Why it’s important to create backups
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#import-mysql-backups" class="md-nav__link">
+  <a href="#supported-setups" class="md-nav__link">
     <span class="md-ellipsis">
-      Import MySQL backups
+      Supported setups
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#import-postgresql-backups" class="md-nav__link">
+  <a href="#start-here" class="md-nav__link">
     <span class="md-ellipsis">
-      Import PostgreSQL backups
+      Start here
     </span>
   </a>
   
@@ -2999,7 +3112,7 @@
 
 
   
-    <a href="https://github.com/percona/everest-doc/edit/main/docs/backups_and_restore/how_to_import_backups.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/percona/everest-doc/edit/main/docs/backups_and_restore/AboutBackups.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -3008,345 +3121,21 @@
     
       
     
-    <a href="https://github.com/percona/everest-doc/raw/main/docs/backups_and_restore/how_to_import_backups.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/percona/everest-doc/raw/main/docs/backups_and_restore/AboutBackups.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
     </a>
   
 
 
-<h1 id="how-to-import-external-database-backups-using-the-percona-everest-ui">How to import external database backups using the Percona Everest UI<a class="headerlink" href="#how-to-import-external-database-backups-using-the-percona-everest-ui" title="Permanent link">&para;</a></h1>
-<p class="power-number">Here are the steps to import external database backups using Percona Everest UI:</p>
-<ol>
-<li>
-<p>Log in to the Percona Everest UI.</p>
-</li>
-<li>
-<p>From the Percona Everest homepage, click <strong>Import</strong>. Select the database type you want to import(MySQL, PostgreSQL, or MongoDB). The <strong>Basic Information</strong> page will be displayed.</p>
-</li>
-<li>
-<p>Fill in the details on the <strong>Basic information</strong> page and click <strong>Continue</strong>. This will take you to the <strong>Import info</strong> page.</p>
-</li>
-<li>
-<p>Select the <code>DataImporter</code> from the dropdown on the <strong>Import information</strong> page. Follow the steps below based on the selected database:</p>
-</li>
-</ol>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A74 74 0 0 1 11.91 24h.481a29 29 0 0 1 .51-3.07c.417-.296.604-.463.85-.693a11.34 11.34 0 0 0 3.639-8.464c.01-.814-.103-1.662-.197-2.218m-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405"/></svg></span> MongoDB backups</label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.405 5.501c-.115 0-.193.014-.274.033v.013h.014c.054.104.146.18.214.273.054.107.1.214.154.32l.014-.015c.094-.066.14-.172.14-.333-.04-.047-.046-.094-.08-.14-.04-.067-.126-.1-.18-.153zM5.77 18.695h-.927a51 51 0 0 0-.27-4.41h-.008l-1.41 4.41H2.45l-1.4-4.41h-.01a73 73 0 0 0-.195 4.41H0q.083-2.95.41-5.53h1.15l1.335 4.064h.008l1.347-4.064h1.095q.363 3.024.428 5.53zm4.017-4.08q-.567 3.069-1.492 4.46-.723 1.074-1.583 1.073-.228 0-.566-.138v-.494q.166.026.386.026.402 0 .647-.222.295-.27.295-.605 0-.233-.23-.944L6.23 14.615h.91l.727 2.36q.247.804.205 1.123.6-1.598.835-3.483zm12.325 4.08h-2.63v-5.53h.885v4.85h1.745zm-3.32.135-1.016-.5q.136-.113.255-.25.649-.76.648-2.253 0-2.745-2.155-2.746-1.056 0-1.65.697-.646.762-.646 2.245-.001 1.459.574 2.14.524.615 1.583.615.396 0 .725-.098l1.325.772.36-.622zM15.5 17.588q-.337-.541-.337-1.736 0-2.09 1.27-2.09.666 0 .977.5.336.543.336 1.723 0 2.107-1.27 2.108-.667 0-.978-.5zm-1.658-.425q0 .706-.516 1.156-.514.45-1.384.45c-.543 0-1.064-.172-1.573-.515l.237-.476q.656.329 1.19.328.498 0 .783-.22a.75.75 0 0 0 .3-.615c0-.33-.23-.61-.648-.845-.388-.213-1.163-.657-1.163-.657-.422-.307-.632-.636-.632-1.177q0-.674.47-1.085.471-.416 1.22-.415.769 0 1.4.41l-.213.476a2.7 2.7 0 0 0-1.064-.23q-.425 0-.654.206a.69.69 0 0 0-.248.524c0 .328.234.61.666.85.393.215 1.187.67 1.187.67.433.305.648.63.648 1.168zm9.382-5.852c-.535-.014-.95.04-1.297.188-.1.04-.26.04-.274.167.055.053.063.14.11.214.08.134.218.313.346.407q.208.167.427.31c.26.16.555.255.81.416.145.094.293.213.44.313.073.05.12.14.214.172v-.02c-.046-.06-.06-.147-.105-.214-.067-.067-.134-.127-.2-.193a3.2 3.2 0 0 0-.695-.675c-.214-.146-.682-.35-.77-.595l-.013-.014c.146-.013.32-.066.46-.106.227-.06.435-.047.67-.106q.16-.042.32-.094v-.06c-.12-.12-.21-.283-.334-.395a9 9 0 0 0-1.104-.823c-.21-.134-.476-.22-.697-.334-.08-.04-.214-.06-.26-.127-.12-.146-.19-.34-.275-.514a18 18 0 0 1-.547-1.163c-.12-.262-.193-.523-.34-.763-.69-1.137-1.437-1.826-2.586-2.5-.247-.14-.543-.2-.856-.274-.167-.008-.334-.02-.5-.027-.11-.047-.216-.174-.31-.235-.38-.24-1.364-.76-1.644-.072-.18.434.267.862.422 1.082.115.153.26.328.34.5.047.116.06.235.107.356.106.294.207.622.347.897.073.14.153.287.247.413.054.073.146.107.167.227-.094.136-.1.334-.154.5-.24.757-.146 1.693.194 2.25.107.166.362.534.703.393.3-.12.234-.5.32-.835.02-.08.007-.133.048-.187v.015c.094.188.188.367.274.555.206.328.566.668.867.895.16.12.287.328.487.402v-.02h-.015c-.043-.058-.1-.086-.154-.133a3.5 3.5 0 0 1-.35-.4 9 9 0 0 1-.747-1.218c-.11-.21-.202-.436-.29-.643-.04-.08-.04-.2-.107-.24-.1.146-.247.273-.32.453-.127.288-.14.642-.188 1.01-.027.007-.014 0-.027.014-.214-.052-.287-.274-.367-.46-.2-.475-.233-1.238-.06-1.785.047-.14.247-.582.167-.716-.042-.127-.174-.2-.247-.303a2.5 2.5 0 0 1-.24-.427c-.16-.374-.24-.788-.414-1.162-.08-.173-.22-.354-.334-.513-.127-.18-.267-.307-.368-.52-.033-.073-.08-.194-.027-.274.014-.054.042-.075.094-.09.088-.072.335.022.422.062.247.1.455.194.662.334.094.066.195.193.315.226h.14c.214.047.455.014.655.073.355.114.675.28.962.46a5.95 5.95 0 0 1 2.085 2.286c.08.154.115.295.188.455.14.33.313.663.455.982.14.315.275.636.476.897.1.14.502.213.682.286.133.06.34.115.46.188.23.14.454.3.67.454.11.076.443.243.463.378"/></svg></span> MySQL backups</label><label for="__tabbed_1_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.56 14.723a.5.5 0 0 0-.057-.12q-.21-.395-1.007-.231c-1.654.34-2.294.13-2.526-.02 1.342-2.048 2.445-4.522 3.041-6.83.272-1.05.798-3.523.122-4.73a1.6 1.6 0 0 0-.15-.236C21.693.91 19.8.025 17.51.001c-1.495-.016-2.77.346-3.116.479a10 10 0 0 0-.516-.082 8 8 0 0 0-1.312-.127c-1.182-.019-2.203.264-3.05.84C8.66.79 4.729-.534 2.296 1.19.935 2.153.309 3.873.43 6.304c.041.818.507 3.334 1.243 5.744q.69 2.26 1.433 3.582.83 1.493 1.714 1.79c.448.148 1.133.143 1.858-.729a56 56 0 0 1 1.945-2.206c.435.235.906.362 1.39.377v.004a11 11 0 0 0-.247.305c-.339.43-.41.52-1.5.745-.31.064-1.134.233-1.146.811a.6.6 0 0 0 .091.327c.227.423.922.61 1.015.633 1.335.333 2.505.092 3.372-.679-.017 2.231.077 4.418.345 5.088.221.553.762 1.904 2.47 1.904q.375.001.829-.094c1.782-.382 2.556-1.17 2.855-2.906.15-.87.402-2.875.539-4.101.017-.07.036-.12.057-.136 0 0 .07-.048.427.03l.044.007.254.022.015.001c.847.039 1.911-.142 2.531-.43.644-.3 1.806-1.033 1.595-1.67M2.37 11.876c-.744-2.435-1.178-4.885-1.212-5.571-.109-2.172.417-3.683 1.562-4.493 1.837-1.299 4.84-.54 6.108-.13l-.01.01C6.795 3.734 6.843 7.226 6.85 7.44c0 .082.006.199.016.36.034.586.1 1.68-.074 2.918-.16 1.15.194 2.276.973 3.089q.12.126.252.237c-.347.371-1.1 1.193-1.903 2.158-.568.682-.96.551-1.088.508-.392-.13-.813-.587-1.239-1.322-.48-.839-.963-2.032-1.415-3.512m6.007 5.088a1.6 1.6 0 0 1-.432-.178c.089-.039.237-.09.483-.14 1.284-.265 1.482-.451 1.915-1 .099-.127.211-.27.367-.443a.4.4 0 0 0 .074-.13c.17-.151.272-.11.436-.042.156.065.308.26.37.475.03.102.062.295-.045.445-.904 1.266-2.222 1.25-3.168 1.013m2.094-3.988-.052.14c-.133.357-.257.689-.334 1.004-.667-.002-1.317-.288-1.81-.803-.628-.655-.913-1.566-.783-2.5.183-1.308.116-2.447.08-3.059l-.013-.22c.296-.262 1.666-.996 2.643-.772.446.102.718.406.83.928.585 2.704.078 3.83-.33 4.736a9 9 0 0 0-.23.546m7.364 4.572q-.024.266-.062.596l-.146.438a.4.4 0 0 0-.018.108c-.006.475-.054.649-.115.87-.064.229-.135.488-.18 1.057-.11 1.414-.878 2.227-2.417 2.556-1.515.325-1.784-.496-2.02-1.221a7 7 0 0 0-.078-.227c-.215-.586-.19-1.412-.157-2.555.016-.561-.025-1.901-.33-2.646q.006-.44.019-.892a.4.4 0 0 0-.016-.113 2 2 0 0 0-.044-.208c-.122-.428-.42-.786-.78-.935-.142-.059-.403-.167-.717-.087.067-.276.183-.587.309-.925l.053-.142c.06-.16.134-.325.213-.5.426-.948 1.01-2.246.376-5.178-.237-1.098-1.03-1.634-2.232-1.51-.72.075-1.38.366-1.709.532a6 6 0 0 0-.196.104c.092-1.106.439-3.174 1.736-4.482a4 4 0 0 1 .303-.276.35.35 0 0 0 .145-.064c.752-.57 1.695-.85 2.802-.833q.616.01 1.174.081c1.94.355 3.244 1.447 4.036 2.383.814.962 1.255 1.931 1.431 2.454-1.323-.134-2.223.127-2.68.78-.992 1.418.544 4.172 1.282 5.496.135.242.252.452.289.54.24.583.551.972.778 1.256.07.087.138.171.189.245-.4.116-1.12.383-1.055 1.717-.013.156-.043.447-.084.815-.046.208-.07.46-.1.766m.89-1.621c-.04-.832.27-.919.597-1.01l.135-.041a1 1 0 0 0 .134.103c.57.376 1.583.421 3.007.134-.202.177-.519.4-.953.601-.41.19-1.096.333-1.747.364-.72.034-1.086-.08-1.173-.151m.57-9.271c-.006.35-.054.669-.105 1.001-.055.358-.112.728-.127 1.177-.014.436.04.89.093 1.33.107.887.216 1.8-.207 2.701a4 4 0 0 1-.188-.385 8 8 0 0 0-.325-.617c-.616-1.104-2.057-3.69-1.32-4.744.38-.543 1.342-.566 2.179-.463m.228 7.013-.085-.107-.035-.044c.726-1.2.584-2.387.457-3.439-.052-.432-.1-.84-.088-1.222.013-.407.066-.755.118-1.092.064-.415.13-.844.111-1.35a.6.6 0 0 0 .012-.19c-.046-.486-.6-1.938-1.73-3.253a7.8 7.8 0 0 0-2.688-2.04A9.3 9.3 0 0 1 17.62.746c2.052.046 3.675.814 4.824 2.283a1 1 0 0 1 .067.1c.723 1.356-.276 6.275-2.987 10.54m-8.816-6.116c-.025.18-.31.423-.621.423a1 1 0 0 1-.081-.006.8.8 0 0 1-.506-.315c-.046-.06-.12-.178-.106-.285a.22.22 0 0 1 .093-.149c.118-.089.352-.122.61-.086.316.044.642.193.61.418m7.93-.411c.011.08-.049.2-.153.31a.72.72 0 0 1-.408.223 1 1 0 0 1-.075.005c-.293 0-.541-.234-.56-.371-.024-.177.264-.31.56-.352.298-.042.612.009.636.185"/></svg></span> PostgreSQL backups</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<h2 id="import-mongodb-backups">Import MongoDB backups<a class="headerlink" href="#import-mongodb-backups" title="Permanent link">&para;</a></h2>
-<p class="power-number">Provide the details of the backup you want to import:</p>
-<ol>
-<li>
-<p>Click <strong>Fill details</strong> to provide your S3 storage details. The <strong>S3 details</strong> page will open. </p>
-<p>Enter the following:</p>
-<ul>
-<li><strong>Bucket name</strong>:  Enter the unique name identifying your S3 storage bucket.</li>
-<li><strong>Region</strong>: Select the geographical AWS region where your bucket is hosted (e.g., us-east-1, eu-west-1)</li>
-<li><strong>Access key</strong>: Enter your AWS Access Key ID (like a username for API access).</li>
-<li><strong>Secret key</strong>: Enter your AWS Secret Access Key (like a password for secure API access).</li>
-</ul>
-<p>Click <strong>Save</strong>.</p>
-<p><img alt="!image" src="../images/mongodb_s3_details_importers.png" /></p>
-</li>
-<li>
-<p>In the <strong>File directory</strong> section, specify the path within your S3 bucket where the backup files are stored. Click <strong>Save</strong>.</p>
-<div class="admonition info">
-<p class="admonition-title">Important</p>
-<p>Percona Everest does not validate file paths or verify the existence of files in the specified storage buckets. Make sure that the backup directory path is correct and accessible.</p>
-<p>To verify that the specified path exists, you can use the AWS CLI:</p>
-<div class="highlight"><pre><span></span><code>aws s3 ls s3://&lt;bucket-name&gt;/&lt;path-to-backup&gt; --region &lt;region&gt;
-</code></pre></div>
-</div>
-<details class="example">
-<summary>Find the file path using AWS CLI</summary>
-<p><strong>Prerequisites:</strong> Ensure AWS CLI is installed and configured on your system. To install AWS CLI, refer to the <a href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html" target="_blank">AWS CLI installation guide</a>.</p>
-<ol>
-<li>
-<p>Run the following command:</p>
-<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>&gt;<span class="w"> </span>~/.aws/credentials
-<span class="o">[</span>default<span class="o">]</span>
-<span class="nv">aws_access_key_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>SECRET
-<span class="nv">aws_secret_access_key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>SECRET
-</code></pre></div>
-</li>
-<li>
-<p>Navigate your S3 bucket structure:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># List the folders in the bucket            </span>
-aws<span class="w"> </span>s3<span class="w"> </span>ls<span class="w"> </span>&lt;S3<span class="w"> </span>bucket-name&gt;
-
-<span class="c1"># Output           </span>
-PRE<span class="w"> </span>mongodb-zh5/
-PRE<span class="w"> </span>postgresql-6az/
-
-<span class="c1"># List the subfolders                </span>
-aws<span class="w"> </span>s3<span class="w"> </span>ls<span class="w"> </span>&lt;S3<span class="w"> </span>bucket-name&gt;/mongodb-zh5/
-
-<span class="c1"># Output                </span>
-PRE<span class="w"> </span>02d0a297-16ca-4b9f-8073-2f16607de3c9/
-
-<span class="c1"># Drill down further</span>
-aws<span class="w"> </span>s3<span class="w"> </span>ls<span class="w"> </span>&lt;S3<span class="w"> </span>bucket-name&gt;/mongodb-zh5/02d0a297-16ca-4b9f-8073-2f16607de3c9/
-
-<span class="c1"># Output               </span>
-PRE<span class="w"> </span><span class="m">2025</span>-07-01T07:13:32Z/
-
-<span class="c1"># Dig deeper            </span>
-aws<span class="w"> </span>s3<span class="w"> </span>ls<span class="w"> </span>&lt;S3<span class="w"> </span>bucket-name&gt;/mongodb-zh5/02d0a297-16ca-4b9f-8073-2f16607de3c9/2025-07-01T07:13:32Z/
-
-<span class="c1"># Output</span>
-PRE<span class="w"> </span>rs0/
-
-The<span class="w"> </span>file<span class="w"> </span>path<span class="w"> </span><span class="k">for</span><span class="w"> </span>MongoDB<span class="w"> </span>will<span class="w"> </span>be:
-/mongodb-zh5/02d0a297-16ca-4b9f-8073-2f16607de3c9/2025-07-01T07:13:32Z/
-</code></pre></div>
-</li>
-</ol>
-</details>
-<p><img alt="!image" src="../images/importers_mongo_file_path.png" /></p>
-</li>
-<li>
-<p>In the <strong>DB Credentials</strong> section, enter the key-value pairs of the user secrets.</p>
-<details class="example">
-<summary>Retrieve the credentials from the Kubernetes secret</summary>
-<p>Run the following command to decode the credentials stored in the Kubernetes secret:</p>
-<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>secret<span class="w"> </span>everest-secrets-mongodb-zh5<span class="w"> </span>-n<span class="w"> </span>everest<span class="w"> </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s2">&quot;{.data}&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span><span class="s1">&#39;map_values(@base64d)&#39;</span>
-</code></pre></div>
-<p>Replace <code>everest-secrets-mongodb-zh5</code> with your secret name.</p>
-<p>Output</p>
-<div class="highlight"><pre><span></span><code><span class="o">{</span>
-<span class="w">    </span><span class="s2">&quot;MONGODB_BACKUP_PASSWORD&quot;</span>:<span class="w"> </span><span class="s2">&quot;3mBRT5XuJSrMzwhB&quot;</span>,
-<span class="w">    </span><span class="s2">&quot;MONGODB_BACKUP_USER&quot;</span>:<span class="w"> </span><span class="s2">&quot;backup&quot;</span>,
-<span class="w">    </span><span class="s2">&quot;MONGODB_CLUSTER_ADMIN_PASSWORD&quot;</span>:<span class="w"> </span><span class="s2">&quot;hE1M5Eaut93uWJGCykd&quot;</span>,
-<span class="w">    </span><span class="s2">&quot;MONGODB_CLUSTER_ADMIN_USER&quot;</span>:<span class="w"> </span><span class="s2">&quot;clusterAdmin&quot;</span>,
-<span class="w">    </span><span class="s2">&quot;MONGODB_CLUSTER_MONITOR_PASSWORD&quot;</span>:<span class="w"> </span><span class="s2">&quot;4ICXY35dqCfjZYR2p7&quot;</span>,
-<span class="w">    </span><span class="s2">&quot;MONGODB_CLUSTER_MONITOR_USER&quot;</span>:<span class="w"> </span><span class="s2">&quot;clusterMonitor&quot;</span>,
-<span class="w">    </span><span class="s2">&quot;MONGODB_DATABASE_ADMIN_PASSWORD&quot;</span>:<span class="w"> </span><span class="s2">&quot;5aQbEZEDjhoAWoSbc03&quot;</span>,
-<span class="w">    </span><span class="s2">&quot;MONGODB_DATABASE_ADMIN_USER&quot;</span>:<span class="w"> </span><span class="s2">&quot;databaseAdmin&quot;</span>,
-<span class="w">    </span><span class="s2">&quot;MONGODB_USER_ADMIN_PASSWORD&quot;</span>:<span class="w"> </span><span class="s2">&quot;a9pb12A09pSNchldzq&quot;</span>,
-<span class="w">    </span><span class="s2">&quot;MONGODB_USER_ADMIN_USER&quot;</span>:<span class="w"> </span><span class="s2">&quot;userAdmin&quot;</span>
-<span class="w">    </span><span class="o">}</span>
-</code></pre></div>
-</details>
-<p><img alt="!image" src="../images/importers_mongodb_db_credentials.png" />      </p>
-</li>
-<li>
-<p>Click <strong>Continue</strong> to proceed. You will see the basic information page for your target database.</p>
-</li>
-<li>
-<p>Enter the information and click <strong>Continue</strong> until you reach the end of the wizard.</p>
-<p>Your backup import process will now start. Once the import is successful, the database status will eventually change to <strong>Up</strong>.</p>
-</li>
-</ol>
-<p><img alt="!image" src="../images/import_complete_mongodb.png" /></p>
-</div>
-<div class="tabbed-block">
-<h2 id="import-mysql-backups">Import MySQL backups<a class="headerlink" href="#import-mysql-backups" title="Permanent link">&para;</a></h2>
-<p class="power-number">Provide the details of the backup you want to import:</p>
-<ol>
-<li>
-<p>Click <strong>Fill details</strong> to provide your S3 storage details. The <strong>S3 details</strong> page will open. </p>
-<p>Enter:</p>
-<ul>
-<li><strong>Bucket name</strong>:  Enter the unique name identifying your S3 storage bucket.</li>
-<li><strong>Region</strong>: Select the geographical AWS region where your bucket is hosted (e.g., us-east-1, eu-west-1)</li>
-<li><strong>Access key</strong>: Enter your AWS Access Key ID (like a username for API access).</li>
-<li><strong>Secret key</strong>: Enter your AWS Secret Access Key (like a password for secure API access).</li>
-</ul>
-<p>Click <strong>Save</strong>.</p>
-<p><img alt="!image" src="../images/mongodb_s3_details_importers.png" /></p>
-</li>
-<li>
-<p>In the <strong>File directory</strong> section, specify the path within your S3 bucket where the backup files are stored. Click <strong>Save</strong>.</p>
-<div class="admonition info">
-<p class="admonition-title">Important</p>
-<p>Percona Everest does not validate file paths or verify the existence of files in the specified storage buckets. Make sure that the backup directory path is correct and accessible.</p>
-<p>To verify that the specified path exists, you can use the AWS CLI:</p>
-<div class="highlight"><pre><span></span><code>aws s3 ls s3://&lt;bucket-name&gt;/&lt;path-to-backup&gt; --region &lt;region&gt;
-</code></pre></div>
-</div>
-<details class="example">
-<summary>Example</summary>
-<div class="admonition info">
-<p class="admonition-title">Find the file path using AWS CLI</p>
-<p><strong>Prerequisites:</strong> Ensure AWS CLI is installed and configured on your system. To install AWS CLI, follow the <a href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html" target="_blank">AWS CLI installation guide</a>.</p>
-</div>
-<ol>
-<li>
-<p>Run the following command:</p>
-<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>&gt;<span class="w"> </span>~/.aws/credentials
-<span class="o">[</span>default<span class="o">]</span>
-<span class="nv">aws_access_key_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>SECRET
-<span class="nv">aws_secret_access_key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>SECRET
-</code></pre></div>
-</li>
-<li>
-<p>Navigate your S3 bucket structure:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># List the folders in the bucket</span>
-aws<span class="w"> </span>s3<span class="w"> </span>ls<span class="w"> </span>&lt;S3<span class="w"> </span>bucket-name&gt;
-
-
-<span class="c1"># Output</span>
-PRE<span class="w"> </span>mongodb-zh5/
-PRE<span class="w"> </span>mysql-wih/
-
-
-<span class="c1"># List the subfolders</span>
-aws<span class="w"> </span>s3<span class="w"> </span>ls<span class="w"> </span>&lt;S3<span class="w"> </span>bucket-name&gt;/mysql-wih/
-
-<span class="c1"># Output</span>
-PRE<span class="w"> </span>515f9e1b-301d-4b34-b2bd-959713bc70d0/
-
-
-<span class="c1"># Drill down further</span>
-aws<span class="w"> </span>s3<span class="w"> </span>ls<span class="w"> </span>&lt;S3<span class="w"> </span>bucket-name&gt;/mysql-wih/515f9e1b-301d-4b34-b2bd-959713bc70d0/
-
-
-<span class="c1"># Output</span>
-PRE<span class="w"> </span>mysql-wih-2025-07-01-11:40:18-full.sst_info/
-PRE<span class="w"> </span>mysql-wih-2025-07-01-11:40:18-full/
-<span class="m">2025</span>-07-01<span class="w"> </span><span class="m">17</span>:10:49<span class="w">  </span>
-<span class="m">25765</span><span class="w"> </span>mysql-wih-2025-07-01-11:40:18-full.md5
-<span class="m">2025</span>-07-01<span class="w"> </span><span class="m">17</span>:10:36<span class="w">  </span>
-<span class="m">128</span><span class="w"> </span>mysql-wih-2025-07-01-11:40:18-full.sst_info.md5
-
-The<span class="w"> </span>full<span class="w"> </span>file<span class="w"> </span>path<span class="w"> </span><span class="k">for</span><span class="w"> </span>MySQL<span class="w"> </span>will<span class="w"> </span>be:
-/mysql-wih/515f9e1b-301d-4b34-b2bd-959713bc70d0/mysql-wih-2025-07-01-11:40:18-full/
-</code></pre></div>
-</li>
-</ol>
-</details>
-<p><img alt="!image" src="../images/importers_mysql_file_path.png" /></p>
-</li>
-<li>
-<p>In the <strong>DB Credentials</strong> section, enter the key-value pairs of the user secrets.</p>
-<p><img alt="!image" src="../images/importers_mysql_db_credentials.png" /></p>
-<details class="example">
-<summary>Retrieve the DB credentials from the Kubernetes secrets</summary>
-<p>Run the following command to decode the credentials stored in the Kubernetes secret:</p>
-<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>secret<span class="w"> </span>everest-secrets-mysql-wih<span class="w"> </span>-n<span class="w"> </span>everest<span class="w"> </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s2">&quot;{.data}&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span><span class="s1">&#39;map_values(@base64d)&#39;</span>
-</code></pre></div>
-<p>Output</p>
-<div class="highlight"><pre><span></span><code><span class="o">{</span>
-<span class="w">    </span><span class="s2">&quot;monitor&quot;</span>:<span class="w"> </span><span class="s2">&quot;hgL3^_P*LE</span><span class="nv">$4</span><span class="s2">,b.Z=&quot;</span>,
-<span class="w">    </span><span class="s2">&quot;operator&quot;</span>:<span class="w"> </span><span class="s2">&quot;480.GqWs&amp;K&gt;!~</span><span class="nv">$Di</span><span class="s2">&quot;</span>,
-<span class="w">    </span><span class="s2">&quot;proxyadmin&quot;</span>:<span class="w"> </span><span class="s2">&quot;tud&amp;9[9gVSMMNt+6pj.&quot;</span>,
-<span class="w">    </span><span class="s2">&quot;replication&quot;</span>:<span class="w"> </span><span class="s2">&quot;q!&lt;76&lt;X}F.S2mA._%w&quot;</span>,
-<span class="w">    </span><span class="s2">&quot;root&quot;</span>:<span class="w"> </span><span class="s2">&quot;_bvt*Ip*@r-JOpz&gt;q@1&quot;</span>,
-<span class="w">    </span><span class="s2">&quot;xtrabackup&quot;</span>:<span class="w"> </span><span class="s2">&quot;icR#jAwr0V-UW##73o&quot;</span>
-<span class="o">}</span>
-</code></pre></div>
-</details>
-</li>
-<li>
-<p>Click <strong>Continue</strong> to proceed. You will see the basic information page for your target database.</p>
-</li>
-<li>
-<p>Enter the information and click on continue until you reach the end of the wizard.</p>
-<p>Your backup import process will now start. Once the import is successful, the database status will eventually change to <strong>Up</strong>.</p>
-</li>
-</ol>
-<p><img alt="!image" src="../images/import_complete.png" /></p>
-</div>
-<div class="tabbed-block">
-<h2 id="import-postgresql-backups">Import PostgreSQL backups<a class="headerlink" href="#import-postgresql-backups" title="Permanent link">&para;</a></h2>
-<p class="power-number">Provide the details of the file you want to import:</p>
-<ol>
-<li>
-<p>Click <strong>Fill details</strong> to provide your S3 storage details. The <strong>S3 details</strong> page will open. </p>
-<p>Enter:</p>
-<ul>
-<li><strong>Bucket name</strong>:  Enter the unique name identifying your S3 storage bucket.</li>
-<li><strong>Region</strong>: Select the geographical AWS region where your bucket is hosted (e.g., us-east-1, eu-west-1)</li>
-<li><strong>Access key</strong>: Enter your AWS Access Key ID (like a username for API access).</li>
-<li><strong>Secret key</strong>: Enter your AWS Secret Access Key (like a password for secure API access).</li>
-</ul>
-<p>Click <strong>Save</strong>.</p>
-<p><img alt="!image" src="../images/mongodb_s3_details_importers.png" /></p>
-</li>
-<li>
-<p>In the <strong>File directory</strong> section, specify the path within your S3 bucket where the backup files are stored. Click <strong>Save</strong>.</p>
-<div class="admonition info">
-<p class="admonition-title">Important</p>
-<p>Percona Everest does not validate file paths or verify the existence of files in the specified storage buckets. Make sure that the backup directory path is correct and accessible.</p>
-<p>To verify that the specified path exists, you can use the AWS CLI:</p>
-<div class="highlight"><pre><span></span><code>aws s3 ls s3://&lt;bucket-name&gt;/&lt;path-to-backup&gt; --region &lt;region&gt;
-</code></pre></div>
-</div>
-<details class="example">
-<summary>Find the file path using AWS CLI</summary>
-<div class="admonition info">
-<p class="admonition-title">Find the file path using AWS CLI</p>
-<p><strong>Prerequisites:</strong> Ensure AWS CLI is installed and configured on your system. To install AWS CLI, refer to the <a href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html" target="_blank">AWS CLI installation guide</a>.</p>
-</div>
-<ol>
-<li>
-<p>Run the following command:</p>
-<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>&gt;<span class="w"> </span>~/.aws/credentials
-<span class="o">[</span>default<span class="o">]</span>
-<span class="nv">aws_access_key_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>SECRET
-<span class="nv">aws_secret_access_key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>SECRET
-</code></pre></div>
-</li>
-<li>
-<p>Navigate your S3 bucket structure:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># List the folders in the bucket</span>
-aws<span class="w"> </span>s3<span class="w"> </span>ls<span class="w"> </span>&lt;S3<span class="w"> </span>bucket-name&gt;
-
-<span class="c1"># Output</span>
-PRE<span class="w"> </span>postgresql-nf9/
-
-<span class="c1"># List the subfolders:</span>
-aws<span class="w"> </span>s3<span class="w"> </span>ls<span class="w"> </span>&lt;S3<span class="w"> </span>bucket-name&gt;/postgresql-nf9/
-
-<span class="c1"># Output</span>
-PRE<span class="w"> </span>bd68c303-33eb-4368-b564-2cc4b9c71163/
-
-<span class="c1"># Drill down further:</span>
-aws<span class="w"> </span>s3<span class="w"> </span>ls<span class="w"> </span>&lt;S3<span class="w"> </span>bucket-name&gt;/postgresql-nf9/bd68c303-33eb-4368-b564-2cc4b9c71163/
-
-<span class="c1"># Output</span>
-PRE<span class="w"> </span>archive/
-PRE<span class="w"> </span>backup/
-
-
-<span class="c1"># Go into the backup folder</span>
-aws<span class="w"> </span>s3<span class="w"> </span>ls<span class="w"> </span>&lt;S3<span class="w"> </span>bucket-name&gt;/postgresql-nf9/bd68c303-33eb-4368-b564-2cc4b9c71163/backup/
-
-<span class="c1"># Output</span>
-PRE<span class="w"> </span>db/
-
-
-<span class="c1"># Go into the db folder</span>
-aws<span class="w"> </span>s3<span class="w"> </span>ls<span class="w"> </span>&lt;S3<span class="w"> </span>bucket-name&gt;/postgresql-nf9/bd68c303-33eb-4368-b564-2cc4b9c71163/backup/db/
-
-<span class="c1"># Output</span>
-PRE<span class="w"> </span><span class="m">20250702</span>-085755F/
-PRE<span class="w"> </span>backup.history/
-<span class="m">2025</span>-07-02<span class="w"> </span><span class="m">14</span>:28:53<span class="w">   </span><span class="m">1174</span><span class="w"> </span>backup.info
-<span class="m">2025</span>-07-02<span class="w"> </span><span class="m">14</span>:28:53<span class="w">   </span><span class="m">1174</span><span class="w"> </span>backup.info.copy
-
-
-The<span class="w"> </span>full<span class="w"> </span>file<span class="w"> </span>path<span class="w"> </span><span class="k">for</span><span class="w"> </span>PostgreSQL<span class="w"> </span>will<span class="w"> </span>be:
-/postgresql-nf9/bd68c303-33eb-4368-b564-2cc4b9c71163/backup/db/20250702-085755F/
-</code></pre></div>
-</li>
-</ol>
-</details>
-<p><img alt="!image" src="../images/importers_pg_file_path.png" /></p>
-</li>
-<li>
-<p>Click <strong>Continue</strong>. You will see the basic information page for your target database.</p>
-</li>
-<li>
-<p>Enter the information and click <strong>Continue</strong> until you reach the end of the wizard.</p>
-<p>Your backup import process will now start. Once the import is successful, the database status will eventually change to <strong>Up</strong>.</p>
-</li>
-</ol>
-<p><img alt="!image" src="../images/import_complete_postgresql.png" /></p>
-</div>
-</div>
-</div>
+<h1 id="about-backups">About backups<a class="headerlink" href="#about-backups" title="Permanent link">&para;</a></h1>
+<h2 id="why-its-important-to-create-backups">Why it’s important to create backups<a class="headerlink" href="#why-its-important-to-create-backups" title="Permanent link">&para;</a></h2>
+<p>Databases (DBs) may get damaged due to a variety of reasons, including disk crashes, power outages, software errors, or even virus attacks.  </p>
+<p>To ensure that you can recover data in such events, it is critical to back up your databases. With Everest, you can do this with zero downtime and minimal performance impact.</p>
+<h2 id="supported-setups">Supported setups<a class="headerlink" href="#supported-setups" title="Permanent link">&para;</a></h2>
+<p>Everest enables you to create and restore on-demand, scheduled and Point-in-Time-Recovery (PITR) backups.</p>
+<h2 id="start-here">Start here<a class="headerlink" href="#start-here" title="Permanent link">&para;</a></h2>
+<p><a class="md-button" href="createBackups/backup_storage/CreateStorage.html">Prepare a backup storage location <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span></a></p>
 
 
 
