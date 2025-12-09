@@ -1,7 +1,6 @@
 {{ $docs := .Site.GetPage "/docs" }}
 
 {{ with $docs }}
-<p class="text-sm">Documentation by version</p>
 {{ range .Pages.Reverse }}
 <p>
     <a href="{{ .Params.location }}"><span
