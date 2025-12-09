@@ -14,28 +14,28 @@
         <meta name="author" content="Percona LLC">
       
       
-        <link rel="canonical" href="https://docs.percona.com/everest/use/backupRestore.html">
+        <link rel="canonical" href="https://docs.percona.com/everest/migration_guide.html">
       
       
-        <link rel="prev" href="db_provision.html">
+        <link rel="prev" href="quickstart-guide/quick-install.html">
       
       
-        <link rel="next" href="cluster-management.html">
+        <link rel="next" href="install/SetupPrereqs.html">
       
       
-      <link rel="icon" href="../images/percona-favicon.ico">
+      <link rel="icon" href="images/percona-favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
-        <title>Back up and restore data - Percona Everest</title>
+        <title>Migrate to Percona Everest - Percona Everest</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -58,13 +58,13 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     
-      <link rel="stylesheet" href="../css/percona.css">
+      <link rel="stylesheet" href="css/percona.css">
     
-      <link rel="stylesheet" href="../css/design.css">
+      <link rel="stylesheet" href="css/design.css">
     
-      <link rel="stylesheet" href="../css/nocopy.css">
+      <link rel="stylesheet" href="css/nocopy.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -87,7 +87,7 @@
                  
                  
                  <meta property="og:type" content="website" />
-                 <meta property="og:title" content="Percona Everest - Back up and restore data" />
+                 <meta property="og:title" content="Percona Everest - Migrate to Percona Everest" />
                  <meta property="og:image" content="https://docs.percona.com/everest/images/everest.png">
                  <meta property="og:url" content="https://docs.percona.com/everest/">
               
@@ -110,7 +110,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#back-up-and-restore-databases" class="md-skip">
+        <a href="#migration-pmm-dbaas-to-percona-everest" class="md-skip">
           Skip to content
         </a>
       
@@ -124,7 +124,7 @@
     <nav class="md-header__inner md-grid" aria-label="Header">
       <a href="https://percona.com/software/documentation" class="md-header__button md-logo" aria-label="Percona Everest" data-md-component="logo">
         
-  <img src="../images/percona-logo.svg" alt="logo">
+  <img src="images/percona-logo.svg" alt="logo">
 
       </a>
       <label class="md-header__button md-icon" for="__drawer">
@@ -140,7 +140,7 @@
           <div class="md-header__topic" data-md-component="header-topic">
             <span class="md-ellipsis">
               
-                Back up and restore data
+                Migrate to Percona Everest
               
             </span>
           </div>
@@ -245,7 +245,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="https://docs.percona.com" title="Percona Everest" class="md-nav__button md-logo" aria-label="Percona Everest" data-md-component="logo">
       
-  <img src="../images/percona-logo.svg" alt="logo">
+  <img src="images/percona-logo.svg" alt="logo">
 
     </a>
     Percona Everest
@@ -272,7 +272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../index.html" class="md-nav__link">
+      <a href="index.html" class="md-nav__link">
         
   
   
@@ -332,7 +332,30 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/Percona%20Everest%200.4.0%20%282023-10-30%29.html" class="md-nav__link">
+      <a href="release-notes/Percona%20Everest%200.5.0%20%282023-11-28%29.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Percona Everest 0.5.0 (2023-11-28)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="release-notes/Percona%20Everest%200.4.0%20%282023-10-30%29.html" class="md-nav__link">
         
   
   
@@ -362,7 +385,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../features.html" class="md-nav__link">
+      <a href="features.html" class="md-nav__link">
         
   
   
@@ -422,7 +445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../quickstart-guide/qs-overview.html" class="md-nav__link">
+      <a href="quickstart-guide/qs-overview.html" class="md-nav__link">
         
   
   
@@ -483,7 +506,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../quickstart-guide/qs-prerequisites.html" class="md-nav__link">
+      <a href="quickstart-guide/qs-prerequisites.html" class="md-nav__link">
         
   
   
@@ -506,7 +529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../quickstart-guide/eks.html" class="md-nav__link">
+      <a href="quickstart-guide/eks.html" class="md-nav__link">
         
   
   
@@ -529,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../quickstart-guide/gke.html" class="md-nav__link">
+      <a href="quickstart-guide/gke.html" class="md-nav__link">
         
   
   
@@ -560,7 +583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../quickstart-guide/quick-install.html" class="md-nav__link">
+      <a href="quickstart-guide/quick-install.html" class="md-nav__link">
         
   
   
@@ -587,160 +610,6 @@
       
   
   
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Install
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            Install
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../install/installEverest.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Install Percona Everest
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../install/uninstallEverest.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Uninstall Percona Everest
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Use
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            Use
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="db_provision.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Provision a database
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -758,7 +627,7 @@
   
   
   <span class="md-ellipsis">
-    Back up and restore data
+    Migrate to Percona Everest
     
   </span>
   
@@ -766,12 +635,12 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="backupRestore.html" class="md-nav__link md-nav__link--active">
+      <a href="migration_guide.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
-    Back up and restore data
+    Migrate to Percona Everest
     
   </span>
   
@@ -794,18 +663,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#why-its-important-to-create-backups" class="md-nav__link">
+  <a href="#before-you-migrate" class="md-nav__link">
     <span class="md-ellipsis">
-      Why it’s important to create backups
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#supported-setups" class="md-nav__link">
-    <span class="md-ellipsis">
-      Supported setups
+      Before you migrate
     </span>
   </a>
   
@@ -818,45 +678,21 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Prerequisites">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#prepare-storage-location" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prepare storage location
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-backup" class="md-nav__link">
+  <a href="#migration-procedure" class="md-nav__link">
     <span class="md-ellipsis">
-      Create backup
+      Migration procedure
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#restore-the-database-from-a-previously-saved-backup" class="md-nav__link">
+  <a href="#whats-next" class="md-nav__link">
     <span class="md-ellipsis">
-      Restore the database from a previously saved backup
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#restore-backup-to-a-new-database" class="md-nav__link">
-    <span class="md-ellipsis">
-      Restore backup to a new database
+      What&rsquo;s next
     </span>
   </a>
   
@@ -878,7 +714,44 @@
     </li>
   
 
-              
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Install
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Install
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -887,12 +760,12 @@
   
   
     <li class="md-nav__item">
-      <a href="cluster-management.html" class="md-nav__link">
+      <a href="install/SetupPrereqs.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Manage clusters
+    Setup and prerequisites
     
   </span>
   
@@ -910,12 +783,58 @@
   
   
     <li class="md-nav__item">
-      <a href="scaling.html" class="md-nav__link">
+      <a href="install/installEverest.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Scale database deployment
+    Install Percona Everest
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="install/installEverestCLI.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install Percona Everest CLI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="install/uninstallEverest.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Uninstall Percona Everest
     
   </span>
   
@@ -956,7 +875,7 @@
   
   
   <span class="md-ellipsis">
-    Configure
+    Use
     
   </span>
   
@@ -966,6 +885,258 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Use
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="use/db_provision.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Provision a database
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Back up and restore data
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            Back up and restore data
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="use/AboutBackups.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About backups
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="use/CreateStorage.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Create storage locations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="use/CreateBackup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Create backups
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="use/RestoreBackup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Restore backups
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="use/cluster-management.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Manage clusters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="use/scaling.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Scale database deployment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Configure
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Configure
           </label>
@@ -978,7 +1149,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../configure/db_engine_config.html" class="md-nav__link">
+      <a href="configure/db_engine_config.html" class="md-nav__link">
         
   
   
@@ -1008,7 +1179,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../API.html" class="md-nav__link">
+      <a href="API.html" class="md-nav__link">
         
   
   
@@ -1038,10 +1209,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
         
           
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
             
   
   
@@ -1054,8 +1225,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_9">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
             Reference
           </label>
@@ -1068,7 +1239,30 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/copyright.html" class="md-nav__link">
+      <a href="reference/telemetry.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Telemetry on Percona Everest
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="reference/copyright.html" class="md-nav__link">
         
   
   
@@ -1091,7 +1285,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/trademark-policy.html" class="md-nav__link">
+      <a href="reference/trademark-policy.html" class="md-nav__link">
         
   
   
@@ -1121,7 +1315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contribute.html" class="md-nav__link">
+      <a href="contribute.html" class="md-nav__link">
         
   
   
@@ -1166,18 +1360,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#why-its-important-to-create-backups" class="md-nav__link">
+  <a href="#before-you-migrate" class="md-nav__link">
     <span class="md-ellipsis">
-      Why it’s important to create backups
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#supported-setups" class="md-nav__link">
-    <span class="md-ellipsis">
-      Supported setups
+      Before you migrate
     </span>
   </a>
   
@@ -1190,45 +1375,21 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Prerequisites">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#prepare-storage-location" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prepare storage location
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-backup" class="md-nav__link">
+  <a href="#migration-procedure" class="md-nav__link">
     <span class="md-ellipsis">
-      Create backup
+      Migration procedure
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#restore-the-database-from-a-previously-saved-backup" class="md-nav__link">
+  <a href="#whats-next" class="md-nav__link">
     <span class="md-ellipsis">
-      Restore the database from a previously saved backup
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#restore-backup-to-a-new-database" class="md-nav__link">
-    <span class="md-ellipsis">
-      Restore backup to a new database
+      What&rsquo;s next
     </span>
   </a>
   
@@ -1259,7 +1420,7 @@
 
 
   
-    <a href="https://github.com/percona/everest-doc/edit/main/docs/use/backupRestore.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/percona/everest-doc/edit/main/docs/migration_guide.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1268,85 +1429,126 @@
     
       
     
-    <a href="https://github.com/percona/everest-doc/raw/main/docs/use/backupRestore.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/percona/everest-doc/raw/main/docs/migration_guide.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
     </a>
   
 
 
-<h1 id="back-up-and-restore-databases">Back up and restore databases<a class="headerlink" href="#back-up-and-restore-databases" title="Permanent link">&para;</a></h1>
-<h2 id="why-its-important-to-create-backups">Why it’s important to create backups<a class="headerlink" href="#why-its-important-to-create-backups" title="Permanent link">&para;</a></h2>
-<p>Databases (DBs) may get damaged due to a variety of reasons, including disk crashes, power outages, software errors, or even virus attacks.  </p>
-<p>To ensure that you can recover data in such events, it is critical to back up your databases. With Everest, you can do this with zero downtime and minimal performance impact.</p>
-<h2 id="supported-setups">Supported setups<a class="headerlink" href="#supported-setups" title="Permanent link">&para;</a></h2>
-<p>Currently, you can create and restore on-demand backups. Future releases will add Point-in-Time-Recovery and scheduled backups functionality.</p>
+<h1 id="migration-pmm-dbaas-to-percona-everest">Migration: PMM DBaaS to Percona Everest<a class="headerlink" href="#migration-pmm-dbaas-to-percona-everest" title="Permanent link">&para;</a></h1>
+<p>Migrating from Perona Monitoring and Management (PMM) DBaaS to Percona Everest has many benefits, such as decreased operational overhead, improved scalability, and enhanced flexibility. However, planning and executing the migration is crucial to minimize downtime and ensure data integrity. </p>
+<p>Here&rsquo;s a comprehensive guide to help you through the process.</p>
+<h2 id="before-you-migrate">Before you migrate<a class="headerlink" href="#before-you-migrate" title="Permanent link">&para;</a></h2>
+<p class="power-number">Here are some key differences between Percona Everest and PMM DBaaS:</p>
+<ol>
+<li>
+<p>Percona Everest has a separate and configurable namespace for running operators and database clusters, whereas PMM/DBaaS uses a default namespace.</p>
+</li>
+<li>
+<p>Percona Everestctl is a tool that helps you install and configure operators and monitoring features, whereas this function was previously handled by PMM.</p>
+</li>
+<li>
+<p>Percona Everest has revamped its backup/restore feature, which means that old backups/restores cannot be used.</p>
+</li>
+</ol>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
-<h3 id="prepare-storage-location">Prepare storage location<a class="headerlink" href="#prepare-storage-location" title="Permanent link">&para;</a></h3>
-<p>Before working with backups, create a backup location as a backup destination for creating and storing your backup artifacts.  </p>
-<p>Everest supports Amazon S3-compatible backup locations, which means you can use <a href="https://aws.amazon.com/s3/">AWS S3</a> or any other storage solutions that support S3 API, like <a href="https://min.io/">min.io</a>.</p>
-<div class="admonition caution alert alert-warning">
-<p class="admonition-title">Important</p>
+<p class="power-number">Before getting started with Percona Everest:</p>
+<ol>
+<li>
+<p>Install <a href="https://docs.docker.com/engine/install" target="_blank">Docker Engine</a> (1.13.0 and higher) with the <a href="https://docs.docker.com/compose/install/" target="_blank">Docker compose plugin</a>.</p>
+</li>
+<li>
+<p>Install <a href="https://everything.curl.dev/get" target="_blank">curl</a>.</p>
+</li>
+<li>
+<p>Install <a href="https://jqlang.github.io/jq/" target="_blank">jq</a>.</p>
+</li>
+<li>
+<p>Set up a publicly accessible Kubernetes cluster. </p>
+<p>Percona Everest assists with installing all the necessary operators and required packages, but does not currently help with spinning up a publicly accessible Kubernetes cluster.</p>
+<p>We recommend setting up Percona Everest on the Amazon Elastic Kubernetes Service (EKS) or Google Kubernetes Engine (GKE), as Percona Everest may not work as expected on local Kubernetes installations (minikube, kind, k3d, or similar products) due to network issues.</p>
+<p><a class="md-button" href="quickstart-guide/eks.html">Create EKS cluster <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span></a> <a class="md-button" href="quickstart-guide/gke.html">Create GKE cluster <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span></a></p>
+</li>
+<li>
+<p>Verify that you have access to the Kubernetes cluster that you want to use with Percona Everest. By default, Percona Everest uses the kubeconfig file available under <code>~/.kube/config</code>. </p>
+<p>To verify access to the Kubernetes cluster, run:</p>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>nodes
+</code></pre></div>
+<details class="example">
+<summary>Expected output</summary>
+<div class="no-copy highlight"><pre><span></span><code>NAME                                    STATUS   ROLES    AGE   VERSION
+gke-&lt;name&gt;-default-pool-75d48bfc-bx8g   Ready    &lt;none&gt;   11h   v1.26.7-gke.500
+gke-&lt;name&gt;-default-pool-75d48bfc-c2df   Ready    &lt;none&gt;   11h   v1.26.7-gke.500
+gke-&lt;name&gt;-default-pool-75d48bfc-zl7k   Ready    &lt;none&gt;   11h   v1.26.7-gke.500
+</code></pre></div>
+</details>
+</li>
+</ol>
+<h2 id="migration-procedure">Migration procedure<a class="headerlink" href="#migration-procedure" title="Permanent link">&para;</a></h2>
+<p class="power-number">To migrate from PMM DBaaS to Percona Everest:</p>
+<ol>
+<li><a href="quickstart-guide/quick-install.html">Install</a> everest.</li>
+<li>
+<p>Migrate backup storages from PMM to Percona Everest:</p>
 <ul>
-<li>Currently, Everest does not support S3 buckets with S3 Object Lock. Make sure your backup destination you are registering does not have S3 Object Lock enabled.</li>
-<li>Make sure you have read/write/delete permissions to the S3 bucket.</li>
-<li>Make sure not to share the same backup storage location for multiple database clusters.</li>
+<li>Log in to the PMM UI and navigate to the <strong>Backup &gt; Storage Locations</strong> section. The <strong>Storage Location</strong> page opens. You can see the storage locations configured on this page.</li>
+<li>Click the downward arrow to see the details of the storage location that are configured.</li>
+<li>Log in to Percona Everest and go to the <strong><a href="use/CreateBackup.html">Backup Storages</a></strong> section on the UI.</li>
+<li>Copy-paste the values from the <strong>details</strong> on the configured storage locations in PMM and paste it to <strong><a href="use/CreateStorage.html">Add backup storage</a></strong> page in Percona Everest.</li>
+</ul>
+</li>
+<li>
+<p>Migrate secrets for database clusters from one Kubernetes cluster to a new cluster using the pattern <code>everest-secrets-dbclusterName</code>. </p>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">DBNAME</span><span class="o">=</span>mysql-btknhj
+<span class="nb">export</span><span class="w"> </span><span class="nv">DBTYPE</span><span class="o">=</span>pxc
+</code></pre></div>
+<div class="admonition note alert alert-primary">
+<p class="admonition-title">Note</p>
+<p>The DBTYPE can be <code>pxc</code> or <code>psmdb</code> depending on whether it is a MySQL or MongoDB database.</p>
+</div>
+<p>Get the secret from the kubernetes cluster registered in PMM:</p>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>secret<span class="w"> </span><span class="s2">&quot;dbaas-</span><span class="nv">$DBNAME</span><span class="s2">-</span><span class="nv">$DBTYPE</span><span class="s2">-secrets&quot;</span><span class="w"> </span>-o<span class="w"> </span>yaml<span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s2">&quot;s/name: dbaas-</span><span class="nv">$DBNAME</span><span class="s2">-.*-</span>
+<span class="s2">secrets/name: everest-secrets-</span><span class="nv">$DBNAME</span><span class="s2">/&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s2">&quot;s/namespace: default/namespace: percona-everest/&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>
+secret.yaml
+</code></pre></div>
+<p>Apply the secret in the kubernetes cluster registered in Everest:</p>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>secret.yaml
+</code></pre></div>
+<div class="admonition note alert alert-primary">
+<p class="admonition-title">Note</p>
+<p>Keep the naming consistent across the two Kubernetes clusters.</p>
+</div>
+</li>
+<li>
+<p><a href="use/db_provision.html">Create a new database cluster</a> using the webUI. Run through the creation wizard to select resources, set the name, and configure the backup storage and monitoring of the cluster.</p>
+</li>
+<li>
+<p>Restore data for your database clusters using the operator&rsquo;s backup and restore features.</p>
+<div class="admonition note alert alert-primary">
+<p class="admonition-title">Note</p>
+<ul>
+<li>
+<p>The restoration won&rsquo;t be available for you in the web UI, you&rsquo;ll need to refer to the corresponding operator&rsquo;s documentation for instructions on how to do this.</p>
+<ul>
+<li>For PXC https://docs.percona.com/percona-operator-for-mysql/pxc/backups-restore.html</li>
+<li>For PSMDB https://docs.percona.com/percona-operator-for-mongodb/backups-restore.html</li>
+<li>For PostgreSQL https://docs.percona.com/percona-operator-for-postgresql/2.0/backups-restore.html</li>
+</ul>
+</li>
+<li>
+<p>Each time you run a database cluster, repeat this step.</p>
+</li>
 </ul>
 </div>
-<p class="power-number">To create a backup storage location:</p>
-<ol>
-<li>Go to <strong>Settings &gt; Backup storage</strong> and click <strong>Add backup storage</strong>.  </li>
-<li>In the <strong>Name</strong> field, specify a location name using only lowercase alphanumeric characters or hyphens. </li>
-<li>Enter your credentials, making sure to use regional AWS STS endpoints instead of the global endpoint: <code>https://s3.&lt;region&gt;.amazonaws.com</code>.
-    Using an endpoint that is geographically closer to your application reduces latency and provides better response times.</li>
+</li>
+<li>
+<p>Disable the DBaaS feature in PMM by navigating to <i class="uil uil-cog"></i> <strong>Configuration</strong> → <i class="uil uil-setting"></i> <strong>Settings</strong> → <strong>Advanced Settings</strong> on the PMM UI and toggling <i class="uil uil-toggle-off"></i> the <strong>Database as a Service (DBaaS)</strong> option located in the <strong>Technical preview features</strong> section.</p>
+</li>
 </ol>
-<h2 id="create-backup">Create backup<a class="headerlink" href="#create-backup" title="Permanent link">&para;</a></h2>
-<p class="power-number">To create a backup for a database:</p>
-<ol>
-<li>Go to <i class="uil uil-cog"></i>  <strong>Settings &gt; Backup Storages</strong> and check that  you have an available AWS S3-compatible location for storing  backups.</li>
-<li>Go to the <i class="uil uil-database"></i>  <strong>Databases</strong> view and select the DB which you want to back up.</li>
-<li>Click <strong>Create backup &gt; Now</strong>. </li>
-<li>In the <strong>Create Backup</strong> pop-up, change the default backup name if required, select an available backup location, and then click <strong>Create</strong>.</li>
-</ol>
-<h2 id="restore-the-database-from-a-previously-saved-backup">Restore the database from a previously saved backup<a class="headerlink" href="#restore-the-database-from-a-previously-saved-backup" title="Permanent link">&para;</a></h2>
-<p class="power-number">To restore a database from a backup:</p>
-<ol>
-<li>In the <i class="uil uil-database"></i> <strong>Databases</strong> view, select the database you want to restore.</li>
-<li>Click the <i class="uil uil-ellipsis-h"></i> Actions menu next to the backup you want to restore from, then click <strong>Restore to this DB</strong>. </li>
-<li>Select <strong>Restore</strong> to restore the backup of your database.</li>
-</ol>
-<h2 id="restore-backup-to-a-new-database">Restore backup to a new database<a class="headerlink" href="#restore-backup-to-a-new-database" title="Permanent link">&para;</a></h2>
-<p>Database backups and data replication are complementary components of an effective disaster recovery strategy. </p>
-<p>There are specific situations that require the creation of a new database from a backup instead of restoring the data to the original database:</p>
-<ul>
-<li>
-<p><strong>When the original database is compromised</strong>: Restoring a backup directly to a compromised DB could reintroduce the same issues. Creating a new database from the backup ensures that the restored data is isolated from the original database, preserving data integrity.</p>
-</li>
-<li>
-<p><strong>When you want to debug a problem</strong>: In a disaster recovery situation, it&rsquo;s essential to understand the root problem that led to the need for recovery. Creating a new database allows you to examine the original database for vulnerabilities or issues before restoring the data. This can help identify weaknesses that need to be addressed.</p>
-</li>
-<li>
-<p><strong>When you want to validate backup data before restore</strong>: By creating a new database, you can test the integrity and consistency of the backup data before making it the primary production data. This validation process ensures that the backup is clean and free from corruption, reducing the risk of propagating issues from the backup to the new database.</p>
-</li>
-<li>
-<p><strong>Before upgrading or patching</strong>: In some cases, a disaster recovery event might coincide with the need to upgrade or patch the database software. Creating a new database allows you to apply the necessary upgrades or patches to the new environment, ensuring that the production environment is up-to-date and secure.</p>
-</li>
-<li>
-<p><strong>To create a safety net for rollbacks</strong>: Restoring the backup directly to the original database leaves little room for rolling back the recovery process if issues are discovered later. Creating a new database provides a safety net, as you can decide whether to promote the new database to the production environment or keep the original one if necessary.</p>
-</li>
-</ul>
-<p class="power-number">To create a new database from backup:</p>
-<ol>
-<li>In the <i class="uil uil-database"></i> <strong>Databases</strong> view, select the database you want to replicate.</li>
-<li>Click the <i class="uil uil-ellipsis-h"></i> Actions menu next to the backup you want to replicate from, then click <strong>Create new DB</strong>.</li>
-<li>Select <strong>Create</strong> to start database provisioning for the DB replica.</li>
-<li>In the <strong>Basic information</strong> window, change the default backup name if required, then select one of the classes created by your Kubernetes administrator. 
-Storage classes define what storage configuration and features will be used for storing your database data. Different classes map to different quality-of-service levels, backup policies, persistent volumes, or to arbitrary policies determined by your cluster administrator. For more information, see <a href="https://kubernetes.io/docs/concepts/storage/storage-classes/" target="_blank">Storage Classes</a> in the Kubernetes documentation. </li>
-<li>On the <strong>Resources</strong> page, select the number of nodes and set the resources. For more information see, <a href="db_provision.html">Provision a database</a>.</li>
-<li>On the <strong>Advanced Configurations</strong> page, enable external access and database engine parameters by turning the toggle button on. For more information on configuring specific database parameters, see the <a href="https://dev.mysql.com/doc/refman/8.0/en/option-files.html" target="_blank">MySQL</a>, <a href="https://www.mongodb.com/docs/manual/reference/configuration-options" target="_blank">MongoDB</a>, and <a href="https://www.postgresql.org/docs/current/config-setting.html#CONFIG-SETTING-CONFIGURATION-FILE" target="_blank">PostgreSQL</a> configuration documentation.</li>
-<li>If you&rsquo;ve enabled monitoring during CLI provisioning, this option will show as active on the <strong>Monitoring</strong> page and you can disable it if required.</li>
-<li>Click <strong>Create database</strong> then run the command on the screen to ensure that you&rsquo;re using the same secret as the selected backup.</li>
-</ol>
+<h2 id="whats-next">What&rsquo;s next<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
+<p>After the migration, you can connect to the new database cluster to check if the data has been successfully migrated.</p>
 <div data-banner="data-banner">
 <h2 class="title" id="get-expert-help">Get expert help<a class="headerlink" href="#get-expert-help" title="Permanent link">&para;</a></h2>
 <p>If you need assistance, visit the community forum for comprehensive and free database knowledge, or contact our Percona Database Experts for professional support and services.</p>
@@ -1544,12 +1746,12 @@ Storage classes define what storage configuration and features will be used for 
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["search.highlight", "navigation.top", "content.tabs.link", "content.code.copy", "navigation.tracking", "content.action.edit", "content.action.view"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": ".", "features": ["search.highlight", "navigation.top", "content.tabs.link", "content.code.copy", "navigation.tracking", "content.action.edit", "content.action.view"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="assets/javascripts/bundle.56ea9cef.min.js"></script>
       
-        <script src="../js/promptremover.js"></script>
+        <script src="js/promptremover.js"></script>
       
     
   </body>
