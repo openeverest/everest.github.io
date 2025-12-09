@@ -107,8 +107,9 @@
 
     <script>
         const terminal = document.getElementById('terminal');
+        const currentPath = window.location.pathname;
         const queries = [
-            { text: 'SELECT * FROM pages WHERE route = \'/{{ window.location.pathname }}\';', delay: 500 },
+            { text: `SELECT * FROM pages WHERE route = '${currentPath}';`, delay: 500 },
             { text: '', delay: 800 },
             { text: 'Executing query on primary node...', delay: 1000, color: 'text-blue-400' },
             { text: 'Checking replica set...', delay: 600, color: 'text-blue-400' },
