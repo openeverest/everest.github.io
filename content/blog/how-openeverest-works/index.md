@@ -28,7 +28,7 @@ The OpenEverest UI is a web-based interface that provides a user-friendly way to
 
 ## OpenEverest API Server
 
-The OpenEverest API Server is the central component that exposes a RESTful API for managing database deployments. It handles requests from the UI and interacts with the OpenEverest Operator to perform actions such as database provisioning, scaling, and configuring monitoring.
+The OpenEverest API Server is the central component that exposes a RESTful API for managing database deployments and Kubernetes clusters. It handles requests from the UI and interacts with the OpenEverest Operator.
 
 ![OpenEverest API Server](openeverest-api-server.png)
 
@@ -71,9 +71,20 @@ For example, for PostgreSQL, there may be three custom resources: one for the Po
 
 ![OpenEverest Operator](openeverest-operator.png)
 
-## Helm charts
+## OpenEverest Helm Charts
 
 OpenEverest uses [Helm charts](https://github.com/percona/percona-helm-charts) to simplify the deployment of its components on Kubernetes. Helm is a package manager for Kubernetes that allows users to define, install, and upgrade complex Kubernetes applications.
+
+# How it all works together
+
+OpenEverest's components are designed to work together to provide a unified database management experience on Kubernetes:
+1. **User interaction:** Users interacts with OpenEverest through the web-based UI, while CLI is used for administrative tasks.
+2. **API Server:** UI communicate with the OpenEverest API Server, which acts as the central hub for database management operations.
+3. **OpenEverest Operator:** The API Server delegates database lifecycle operations (such as provisioning, scaling, and backups) to the OpenEverest Operator.
+4. **Database Operators:** The OpenEverest Operator, in turn, manages specific database operators (e.g., for PostgreSQL, MongoDB, MySQL) using Kubernetes custom resources.
+5. **Helm charts:** Helm charts are used to deploy and upgrade OpenEverest components themselves, making installation and maintenance straightforward.
+   This integration allows users to manage complex database environments with simple, consistent workflows, abstracting away the underlying Kubernetes and operator complexity.
+
 
 # Conclusion
 
